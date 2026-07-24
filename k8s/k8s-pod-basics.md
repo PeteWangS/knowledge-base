@@ -17,7 +17,7 @@ priority: 🔴 最高
 
 ## 架构图
 
-![[assets/k8s/pod-architecture.svg]]
+![[assets/k8s/pod-architecture.svg|697]]
 
 ### 核心组件说明
 

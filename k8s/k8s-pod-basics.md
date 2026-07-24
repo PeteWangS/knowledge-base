@@ -17,7 +17,7 @@ priority: 🔴 最高
 
 ## 架构图
 
-![[assets/k8s/pod-architecture.png]]
+![[assets/k8s/pod-architecture.svg]]
 
 ### 核心组件说明
 
@@ -51,7 +51,7 @@ Kubernetes 不直接调度容器，而是调度 Pod。即便只有一个容器�
 
 ### 3. Pod 生命周期（Phase）
 
-![[assets/k8s/pod-lifecycle-phase.png]]
+![[assets/k8s/pod-lifecycle-phase.svg]]
 
 | Pod Phase | 含义 | 常见原因 |
 |-----------|------|---------|
@@ -63,7 +63,7 @@ Kubernetes 不直接调度容器，而是调度 Pod。即便只有一个容器�
 
 ### 4. 容器状态
 
-![[assets/k8s/container-state-flow.png]]
+![[assets/k8s/container-state-flow.svg]]
 
 每个容器的细化状态：
 - **Waiting**：启动中（拉镜像、挂载 Secret）

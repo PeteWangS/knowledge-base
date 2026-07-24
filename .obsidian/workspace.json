@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "a7fe38cf82b73e0b",
+        "id": "9d0b0f4c952a2f2d",
         "type": "tabs",
         "children": [
           {
-            "id": "fc704aa6bb75a101",
+            "id": "b32269a5ae3dfe32",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Kubernetes Pod 基础.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Kubernetes Pod 基础"
             }
           }
         ]
@@ -156,24 +156,35 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
+                "file": "Kubernetes Pod 基础.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "README 的大纲"
+              "title": "Kubernetes Pod 基础 的大纲"
+            }
+          },
+          {
+            "id": "05fe479cc53ce236",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-git:Open Git source control": false,
       "switcher:打开快速切换": false,
       "graph:查看关系图谱": false,
       "canvas:新建白板": false,
@@ -183,9 +194,34 @@
       "bases:新建数据库": false
     }
   },
-  "active": "fc704aa6bb75a101",
+  "active": "b32269a5ae3dfe32",
   "lastOpenFiles": [
+    "assets/k8s/container-state-flow.svg",
+    "assets/k8s/pod-lifecycle-phase.svg",
+    "assets/k8s/pod-architecture.svg",
+    "k8s/k8s-pod-basics.md",
+    "Kubernetes Pod 基础.md",
+    "README.md",
+    "Kubernetes Pod 基础 1.md",
     "knowledge-base-guide.md",
-    "README.md"
+    "assets/k8s/container-state-flow.png",
+    "assets/k8s/pod-lifecycle-phase.png",
+    "assets/k8s/pod-architecture.png",
+    "assets/linux-rocky",
+    "assets/network",
+    "assets/hadoop",
+    "assets/docker",
+    "assets/k8s",
+    "assets/diagram-container-state.png",
+    "assets/diagram-pod-lifecycle.png",
+    "assets/diagram-pod-architecture.png",
+    "assets",
+    "linux/postgresql-install.md",
+    "linux-rocky",
+    "network",
+    "hadoop",
+    "docker",
+    "2024-07 知识库初始化.md",
+    "database/postgresql-notes.md"
   ]
 }

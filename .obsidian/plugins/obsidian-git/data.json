@@ -1,0 +1,13 @@
+{
+  "autoCommit": true,
+  "autoCommitInterval": 15,
+  "autoPush": true,
+  "autoPull": true,
+  "commitMessage": "feat: {{date}} 知识库更新",
+  "splitOutput": false,
+  "pullOnBoot": true,
+  "pushOnPull": true,
+  "syncMethod": "rebase",
+  "showNotification": true,
+  "nativeGit": false
+}

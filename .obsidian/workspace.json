@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "9d0b0f4c952a2f2d",
+        "id": "99c7eb055d37589d",
         "type": "tabs",
         "children": [
           {
-            "id": "b32269a5ae3dfe32",
+            "id": "302d3d1e5d62e18b",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -180,7 +180,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 416.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -194,14 +194,14 @@
       "bases:新建数据库": false
     }
   },
-  "active": "b32269a5ae3dfe32",
+  "active": "302d3d1e5d62e18b",
   "lastOpenFiles": [
+    "k8s/k8s-pod-basics.md",
     "Kubernetes Pod 基础.md",
     "k8s/sedv42PCf",
     "assets/k8s/container-state-flow.svg",
     "assets/k8s/pod-lifecycle-phase.svg",
     "assets/k8s/pod-architecture.svg",
-    "k8s/k8s-pod-basics.md",
     "README.md",
     "Kubernetes Pod 基础 1.md",
     "knowledge-base-guide.md",

@@ -11,14 +11,10 @@
             "id": "302d3d1e5d62e18b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "k8s/k8s-pod-basics.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "k8s-pod-basics"
+              "title": "新标签页"
             }
           }
         ]
@@ -196,15 +192,23 @@
   },
   "active": "302d3d1e5d62e18b",
   "lastOpenFiles": [
-    "k8s/k8s-pod-basics.md",
+    "skill/SKILL.md",
+    "skill/README.md",
+    "skill/scripts/render-mermaid.py",
+    "skill/scripts/kb-topic.sh",
+    "skill/scripts",
+    "skill",
+    "README.md",
     "Kubernetes Pod 基础.md",
+    "knowledge-base-guide.md",
+    "2024-07 知识库初始化.md",
+    "database/postgresql-notes.md",
+    "k8s/k8s-pod-basics.md",
     "k8s/sedv42PCf",
     "assets/k8s/container-state-flow.svg",
     "assets/k8s/pod-lifecycle-phase.svg",
     "assets/k8s/pod-architecture.svg",
-    "README.md",
     "Kubernetes Pod 基础 1.md",
-    "knowledge-base-guide.md",
     "assets/k8s/container-state-flow.png",
     "assets/k8s/pod-lifecycle-phase.png",
     "assets/k8s/pod-architecture.png",
@@ -216,12 +220,6 @@
     "assets/diagram-container-state.png",
     "assets/diagram-pod-lifecycle.png",
     "assets/diagram-pod-architecture.png",
-    "assets",
-    "linux/postgresql-install.md",
-    "linux-rocky",
-    "network",
-    "hadoop",
-    "2024-07 知识库初始化.md",
-    "database/postgresql-notes.md"
+    "linux/postgresql-install.md"
   ]
 }

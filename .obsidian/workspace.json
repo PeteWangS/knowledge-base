@@ -196,6 +196,10 @@
   },
   "active": "05fe479cc53ce236",
   "lastOpenFiles": [
+    "k8s/k8s-cluster-ops-combat.md",
+    "assets/k8s/diagram-monitoring-pipeline.svg",
+    "assets/k8s/diagram-etcd-backup-restore.svg",
+    "assets/k8s/diagram-k8s-ops-architecture.svg",
     "linux-rocky/rocky-linux-ops-basics.md",
     "assets/linux-rocky/diagram-firewalld-zones.svg",
     "assets/linux-rocky/diagram-systemd-flow.svg",
@@ -218,14 +222,11 @@
     "assets/k8s/pod-architecture.svg",
     "Kubernetes Pod 基础 1.md",
     "assets/k8s/container-state-flow.png",
-    "assets/k8s/pod-lifecycle-phase.png",
-    "assets/k8s/pod-architecture.png",
     "assets/linux-rocky",
     "assets/network",
     "assets/hadoop",
     "assets/docker",
     "assets/k8s",
-    "assets/diagram-container-state.png",
     "linux/postgresql-install.md"
   ]
 }

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "skill/SKILL.md",
+                "file": "deployment.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SKILL"
+              "title": "deployment"
             }
           }
         ]
@@ -194,22 +194,25 @@
       "bases:新建数据库": false
     }
   },
-  "active": "05fe479cc53ce236",
+  "active": "302d3d1e5d62e18b",
   "lastOpenFiles": [
+    "k8s/k8s-pod-deployment-service.md",
+    "assets/k8s/diagram-pod-lifecycle.svg",
+    "assets/k8s/diagram-deployment-rollout.svg",
+    "assets/k8s/diagram-k8s-architecture.svg",
     "docker/docker-advanced-compose-swarm-security.md",
+    "deployment.md",
+    "k8s/k8s-cluster-ops-combat.md",
+    "linux-rocky/rocky-linux-ops-basics.md",
+    "skill/SKILL.md",
     "assets/docker/diagram-security-layers.svg",
     "assets/docker/diagram-swarm-architecture.svg",
     "assets/docker/diagram-docker-3layer-architecture.svg",
-    "k8s/k8s-cluster-ops-combat.md",
     "assets/k8s/diagram-monitoring-pipeline.svg",
     "assets/k8s/diagram-etcd-backup-restore.svg",
     "assets/k8s/diagram-k8s-ops-architecture.svg",
-    "linux-rocky/rocky-linux-ops-basics.md",
     "assets/linux-rocky/diagram-firewalld-zones.svg",
-    "assets/linux-rocky/diagram-systemd-flow.svg",
-    "assets/linux-rocky/diagram-rocky-linux-architecture.svg",
     "skill/README.md",
-    "skill/SKILL.md",
     "skill/scripts/render-mermaid.py",
     "skill/scripts/kb-topic.sh",
     "skill/scripts",
@@ -221,7 +224,6 @@
     "database/postgresql-notes.md",
     "k8s/k8s-pod-basics.md",
     "k8s/sedv42PCf",
-    "assets/k8s/container-state-flow.svg",
     "Kubernetes Pod 基础 1.md",
     "assets/linux-rocky",
     "assets/network",

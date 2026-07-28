@@ -18,10 +18,10 @@ Docker 进阶主题涵盖三大核心领域：**Compose** 用于多容器应用�
 ![[assets/docker/diagram-docker-3layer-architecture.svg]]
 
 ### Swarm 集群架构
-![[assets/docker/diagram-swarm-architecture.svg]]
+![[assets/docker/diagram-swarm-architecture.svg|303]]
 
 ### 安全纵深防御模型
-![[assets/docker/diagram-security-layers.svg]]
+![[assets/docker/diagram-security-layers.svg|697]]
 
 ## 核心概念
 

@@ -19,18 +19,18 @@ Kubernetes 是一个开源的容器编排平台，核心目标是通过声明式
 
 ## 架构总览
 
-![[assets/k8s/diagram-k8s-architecture.svg]]
+![[assets/k8s/diagram-k8s-architecture.svg|697]]
 
 Kubernetes 采用主从架构（Master-Worker）：
 
-| 组件 | 角色 | 说明 |
-|------|------|------|
-| kube-apiserver | API 入口 | 所有组件交互的唯一入口，RESTful API |
-| etcd | 分布式存储 | 集群状态的唯一真实来源（source of truth） |
-| kube-scheduler | 调度器 | 根据资源需求/约束将 Pod 分配到合适的 Node |
+| 组件                      | 角色     | 说明                               |
+| ----------------------- | ------ | -------------------------------- |
+| kube-apiserver          | API 入口 | 所有组件交互的唯一入口，RESTful API          |
+| etcd                    | 分布式存储  | 集群状态的唯一真实来源（source of truth）     |
+| kube-scheduler          | 调度器    | 根据资源需求/约束将 Pod 分配到合适的 Node       |
 | kube-controller-manager | 控制器管理器 | 运行所有控制器（Deployment、ReplicaSet 等） |
-| kubelet | 节点代理 | 每个 Node 上的核心代理，负责管理 Pod 生命周期 |
-| kube-proxy | 网络代理 | 维护节点上的网络规则，实现 Service 流量转发 |
+| kubelet                 | 节点代理   | 每个 Node 上的核心代理，负责管理 Pod 生命周期     |
+| kube-proxy              | 网络代理   | 维护节点上的网络规则，实现 Service 流量转发       |
 
 ## 核心概念详解
 
@@ -100,11 +100,11 @@ Pod 经历 **Pending → Running → Succeeded/Failed** 的生命周期：
 
 Kubernetes 提供三种探针对容器进行健康诊断：
 
-| 探针类型 | 失败后果 | 适用场景 |
-|---------|---------|---------|
-| startup probe | 容器无法启动 | 启动慢的应用（initialDelay 友好） |
-| liveness probe | 重启容器 | 死锁检测、故障恢复 |
-| readiness probe | 从 Service 移除流量 | 蓝绿发布、优雅关闭、流量控制 |
+| 探针类型            | 失败后果           | 适用场景                    |
+| --------------- | -------------- | ----------------------- |
+| startup probe   | 容器无法启动         | 启动慢的应用（initialDelay 友好） |
+| liveness probe  | 重启容器           | 死锁检测、故障恢复               |
+| readiness probe | 从 Service 移除流量 | 蓝绿发布、优雅关闭、流量控制          |
 
 探针支持四种检查方式：**HTTP GET**、**TCP Socket**、**Exec 命令**、**gRPC**。
 
@@ -112,14 +112,14 @@ Kubernetes 提供三种探针对容器进行健康诊断：
 
 ## 常见问题与排查
 
-| 问题 | 原因 | 解决方案 |
-|------|------|---------|
-| CrashLoopBackOff | 应用代码错误、配置错误、资源不足、探针过早 | `kubectl logs` → `kubectl describe pod` → 检查配置 → exec 进入调试 |
-| 滚动更新卡住 | ImagePullBackOff、readiness 失败、maxUnavailable 配置不当 | `kubectl rollout status` → `describe deployment` → `rollout undo` |
-| Service 后端无法访问 | 标签选择器不匹配、targetPort 错误、NetworkPolicy 阻止 | `describe service` 检查 Endpoints → 确认 selector → `port-forward` 测试 |
-| ImagePullBackOff | 镜像标签错误、私有仓库认证失败、镜像限流 | `describe pod` 查看原因 → 配置 imagePullSecrets → 使用镜像加速器 |
-| Pod Pending 无法调度 | 节点资源不足、taint/toleration、PVC 未绑定 | `describe pod` 查看 Events → `describe node` 检查资源 → 检查 PVC |
-| OOMKilled / Eviction | 超过内存 limit、节点资源压力 | 合理设置 request/limit → 设置 PriorityClass → 配置 PDB |
+| 问题                   | 原因                                                | 解决方案                                                              |
+| -------------------- | ------------------------------------------------- | ----------------------------------------------------------------- |
+| CrashLoopBackOff     | 应用代码错误、配置错误、资源不足、探针过早                             | `kubectl logs` → `kubectl describe pod` → 检查配置 → exec 进入调试        |
+| 滚动更新卡住               | ImagePullBackOff、readiness 失败、maxUnavailable 配置不当 | `kubectl rollout status` → `describe deployment` → `rollout undo` |
+| Service 后端无法访问       | 标签选择器不匹配、targetPort 错误、NetworkPolicy 阻止           | `describe service` 检查 Endpoints → 确认 selector → `port-forward` 测试 |
+| ImagePullBackOff     | 镜像标签错误、私有仓库认证失败、镜像限流                              | `describe pod` 查看原因 → 配置 imagePullSecrets → 使用镜像加速器               |
+| Pod Pending 无法调度     | 节点资源不足、taint/toleration、PVC 未绑定                   | `describe pod` 查看 Events → `describe node` 检查资源 → 检查 PVC          |
+| OOMKilled / Eviction | 超过内存 limit、节点资源压力                                 | 合理设置 request/limit → 设置 PriorityClass → 配置 PDB                    |
 
 ## 最佳实践
 

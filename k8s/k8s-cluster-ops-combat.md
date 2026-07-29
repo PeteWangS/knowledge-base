@@ -33,11 +33,11 @@ etcd 是 Kubernetes 的键值存储数据库，存储所有集群状态。操作
 
 ### 节点维护（Drain / Cordon / Uncordon）
 
-| 操作 | 命令 | 作用 |
-|------|------|------|
-| Drain | `kubectl drain <node>` | 安全驱逐 Pod + 标记不可调度 |
-| Cordon | `kubectl cordon <node>` | 标记不可调度（不驱逐已有 Pod） |
-| Uncordon | `kubectl uncordon <node>` | 恢复调度 |
+| 操作       | 命令                        | 作用                |
+| -------- | ------------------------- | ----------------- |
+| Drain    | `kubectl drain <node>`    | 安全驱逐 Pod + 标记不可调度 |
+| Cordon   | `kubectl cordon <node>`   | 标记不可调度（不驱逐已有 Pod） |
+| Uncordon | `kubectl uncordon <node>` | 恢复调度              |
 
 Drain 需指定 `--ignore-daemonsets` 忽略 DaemonSet Pod。PDB 建议设置 `AlwaysAllow` 不健康 Pod 驱逐策略以避免阻塞。
 

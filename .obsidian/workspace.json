@@ -11,10 +11,14 @@
             "id": "271c1e302ab2be98",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "docker/dockerfile-best-practices.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "dockerfile-best-practices"
             }
           }
         ]
@@ -192,6 +196,10 @@
   },
   "active": "271c1e302ab2be98",
   "lastOpenFiles": [
+    "docker/docker-advanced-compose-swarm-security.md",
+    "docker/dockerfile-best-practices.md",
+    "assets/docker/diagram-multi-stage-build.svg",
+    "assets/docker/diagram-layer-caching.svg",
     "k8s/k8s-cluster-ops-combat.md",
     "k8s/k8s-pod-deployment-service.md",
     "linux-rocky/rocky-linux-ops-basics.md",
@@ -202,15 +210,12 @@
     "assets/k8s/diagram-pod-lifecycle.svg",
     "assets/k8s/diagram-deployment-rollout.svg",
     "assets/k8s/diagram-k8s-architecture.svg",
-    "docker/docker-advanced-compose-swarm-security.md",
     "skill/SKILL.md",
     "assets/docker/diagram-security-layers.svg",
     "assets/docker/diagram-swarm-architecture.svg",
     "assets/docker/diagram-docker-3layer-architecture.svg",
     "assets/k8s/diagram-monitoring-pipeline.svg",
     "assets/k8s/diagram-etcd-backup-restore.svg",
-    "assets/k8s/diagram-k8s-ops-architecture.svg",
-    "assets/linux-rocky/diagram-firewalld-zones.svg",
     "skill/README.md",
     "skill/scripts/render-mermaid.py",
     "skill/scripts/kb-topic.sh",

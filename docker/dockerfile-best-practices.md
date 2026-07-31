@@ -3,7 +3,7 @@ created: 2026-07-29
 tags: [docker, dockerfile, build, optimization, security]
 source: Docker 官方文档
 ---
-
+ 
 # Dockerfile 编写规范与镜像优化
 
 ## 概述
@@ -50,12 +50,12 @@ Docker 检查每条指令是否可以从缓存中复用。构建缓存的核心�
 
 ### 3. 镜像优化 (Image Optimization)
 
-| 策略 | 说明 | 效果 |
-|------|------|------|
-| 选择最小基础镜像 | Alpine 仅 5MB | 大幅减小镜像体积 |
-| 减少包安装 | `--no-install-recommends` | 避免垂直依赖膨胀 |
-| 清除 apt 缓存 | `rm -rf /var/lib/apt/lists/*` | 减少层体积 |
-| 使用 .dockerignore | 排除不必要的构建文件 | 加速构建，减少上下文 |
+| 策略               | 说明                            | 效果         |
+| ---------------- | ----------------------------- | ---------- |
+| 选择最小基础镜像         | Alpine 仅 5MB                  | 大幅减小镜像体积   |
+| 减少包安装            | `--no-install-recommends`     | 避免垂直依赖膨胀   |
+| 清除 apt 缓存        | `rm -rf /var/lib/apt/lists/*` | 减少层体积      |
+| 使用 .dockerignore | 排除不必要的构建文件                    | 加速构建，减少上下文 |
 
 ### 4. COPY vs ADD 指令
 
@@ -87,15 +87,15 @@ USER appuser
 
 ## 常见问题与解决方案
 
-| 问题 | 原因 | 解决方案 |
-|------|------|----------|
-| apt-get update 缓存问题 | update 和 install 分开在两条 RUN 指令中 | 始终合并为 `apt-get update && apt-get install` 在同一条 RUN 中 |
-| ENV 变量无法清除 | 每个 ENV 创建新层，之前层的变量仍在 | 在单条 RUN 指令中完成 export、使用、unset |
-| 管道命令失败不报错 | Docker 只检查管道最后一个命令的退出码 | 在管道前添加 `set -o pipefail &&` |
-| 多阶段构建引用错误 | 使用数字索引（FROM 0），指令重排序后索引改变 | 使用 `FROM ... AS build` 命名阶段，`COPY --from=build` |
-| 缓存频繁失效 | 构建上下文包含不必要的文件 | 创建 .dockerignore，使用 `--mount=type=bind` |
-| 基础镜像版本可变 | 标签可变（如 alpine:3.21 在不同时间点不同） | 使用 digest 固定版本 `FROM alpine:3.21@sha256:...` |
-| BuildKit 与旧引擎行为差异 | 旧引擎构建所有阶段，BuildKit 只构建依赖链 | 启用 BuildKit：`docker buildx build` 或 `DOCKER_BUILDKIT=1` |
+| 问题                  | 原因                             | 解决方案                                                    |
+| ------------------- | ------------------------------ | ------------------------------------------------------- |
+| apt-get update 缓存问题 | update 和 install 分开在两条 RUN 指令中 | 始终合并为 `apt-get update && apt-get install` 在同一条 RUN 中    |
+| ENV 变量无法清除          | 每个 ENV 创建新层，之前层的变量仍在           | 在单条 RUN 指令中完成 export、使用、unset                           |
+| 管道命令失败不报错           | Docker 只检查管道最后一个命令的退出码         | 在管道前添加 `set -o pipefail &&`                             |
+| 多阶段构建引用错误           | 使用数字索引（FROM 0），指令重排序后索引改变      | 使用 `FROM ... AS build` 命名阶段，`COPY --from=build`         |
+| 缓存频繁失效              | 构建上下文包含不必要的文件                  | 创建 .dockerignore，使用 `--mount=type=bind`                 |
+| 基础镜像版本可变            | 标签可变（如 alpine:3.21 在不同时间点不同）   | 使用 digest 固定版本 `FROM alpine:3.21@sha256:...`            |
+| BuildKit 与旧引擎行为差异   | 旧引擎构建所有阶段，BuildKit 只构建依赖链      | 启用 BuildKit：`docker buildx build` 或 `DOCKER_BUILDKIT=1` |
 
 ---
 

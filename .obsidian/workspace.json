@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docker/dockerfile-best-practices.md",
+                "file": "方案.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "dockerfile-best-practices"
+              "title": "方案"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "0c2697f7f39c1404",
@@ -180,7 +181,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 361.5
+    "width": 361.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -196,16 +198,23 @@
   },
   "active": "271c1e302ab2be98",
   "lastOpenFiles": [
+    "k8s-etcd-backup-restore.md",
+    "方案.md",
+    "k8s-monitoring-pipeline.md",
+    "k8s-ops-essentials.md",
+    "hadoop/hadoop-ecosystem.md",
+    "linux-rocky/rocky-linux-ops-basics.md",
+    "k8s/k8s-pod-deployment-service.md",
+    "k8s/k8s-cluster-ops-combat.md",
     "docker/docker-advanced-compose-swarm-security.md",
     "docker/dockerfile-best-practices.md",
+    "assets/hadoop/diagram-mapreduce-flow.svg",
+    "assets/hadoop/diagram-hadoop-architecture.svg",
+    "chrome-headless-shell/linux-151.0.7922.47",
+    "chrome-headless-shell/151.0.7922.47-chrome-headless-shell-linux64.zip",
+    "chrome-headless-shell",
     "assets/docker/diagram-multi-stage-build.svg",
     "assets/docker/diagram-layer-caching.svg",
-    "k8s/k8s-cluster-ops-combat.md",
-    "k8s/k8s-pod-deployment-service.md",
-    "linux-rocky/rocky-linux-ops-basics.md",
-    "k8s-etcd-backup-restore.md",
-    "k8s-ops-essentials.md",
-    "k8s-monitoring-pipeline.md",
     "deployment.md",
     "assets/k8s/diagram-pod-lifecycle.svg",
     "assets/k8s/diagram-deployment-rollout.svg",
@@ -214,8 +223,6 @@
     "assets/docker/diagram-security-layers.svg",
     "assets/docker/diagram-swarm-architecture.svg",
     "assets/docker/diagram-docker-3layer-architecture.svg",
-    "assets/k8s/diagram-monitoring-pipeline.svg",
-    "assets/k8s/diagram-etcd-backup-restore.svg",
     "skill/README.md",
     "skill/scripts/render-mermaid.py",
     "skill/scripts/kb-topic.sh",
@@ -231,9 +238,6 @@
     "Kubernetes Pod 基础 1.md",
     "assets/linux-rocky",
     "assets/network",
-    "assets/hadoop",
-    "assets/docker",
-    "assets/k8s",
     "linux/postgresql-install.md"
   ]
 }

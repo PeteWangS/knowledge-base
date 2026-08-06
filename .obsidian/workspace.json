@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "方案.md",
+                "file": "k8s/k8s-cluster-troubleshooting.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "方案"
+              "title": "k8s-cluster-troubleshooting"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "0c2697f7f39c1404",
@@ -198,16 +197,20 @@
   },
   "active": "271c1e302ab2be98",
   "lastOpenFiles": [
-    "k8s-etcd-backup-restore.md",
+    "k8s/k8s-pod-deployment-service.md",
+    "k8s/k8s-cluster-troubleshooting.md",
+    "k8s/k8s-cluster-ops-combat.md",
+    "hadoop/hadoop-ecosystem.md",
+    "docker/dockerfile-best-practices.md",
+    "docker/docker-advanced-compose-swarm-security.md",
     "方案.md",
+    "assets/k8s/diagram-node-drain-flow.svg",
+    "assets/k8s/diagram-etcd-backup-restore-flow.svg",
+    "assets/k8s/diagram-k8s-troubleshooting-arch.svg",
+    "k8s-etcd-backup-restore.md",
     "k8s-monitoring-pipeline.md",
     "k8s-ops-essentials.md",
-    "hadoop/hadoop-ecosystem.md",
     "linux-rocky/rocky-linux-ops-basics.md",
-    "k8s/k8s-pod-deployment-service.md",
-    "k8s/k8s-cluster-ops-combat.md",
-    "docker/docker-advanced-compose-swarm-security.md",
-    "docker/dockerfile-best-practices.md",
     "assets/hadoop/diagram-mapreduce-flow.svg",
     "assets/hadoop/diagram-hadoop-architecture.svg",
     "chrome-headless-shell/linux-151.0.7922.47",
@@ -220,9 +223,6 @@
     "assets/k8s/diagram-deployment-rollout.svg",
     "assets/k8s/diagram-k8s-architecture.svg",
     "skill/SKILL.md",
-    "assets/docker/diagram-security-layers.svg",
-    "assets/docker/diagram-swarm-architecture.svg",
-    "assets/docker/diagram-docker-3layer-architecture.svg",
     "skill/README.md",
     "skill/scripts/render-mermaid.py",
     "skill/scripts/kb-topic.sh",

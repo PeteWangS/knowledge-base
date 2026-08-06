@@ -85,7 +85,7 @@ Service 支持 `sessionAffinity: ClientIP` 将同一客户端固定到同一 Pod
 
 > **关键点**：`trafficDistribution: PreferSameZone` 表达路由偏好（如优先同可用区端点）；Local 模式配合 kube-proxy 10256/healthz 健康检查实现 LB 摘流。
 
-## 常见问题
+## 常见问题表
 
 | 问题 | 原因 | 解决方案 |
 |------|------|---------|

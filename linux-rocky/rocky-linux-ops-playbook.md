@@ -59,6 +59,10 @@ systemd 2010 年由 Red Hat 工程师开发，Fedora 15 首发。作为 PID 1 �
 
 zone 描述网络连接的信任级别：drop（丢弃不回复）/block（icmp 拒绝）/public（默认公网）/external（NAT 伪装）/dmz/work/home/internal/trusted（全放行）。zone 绑定网络接口或 source IP 时才 active。
 
+![[assets/linux-rocky/diagram-firewalld-config-flow.svg]]
+
+*图：firewalld 运行时测试 → 永久固化的配置流程*
+
 ### firewall-cmd 运行时与永久配置
 
 所有改动默认仅运行时生效，加 `--permanent` 写永久配置，或先测试再 `--runtime-to-permanent` 固化，最后 `--reload` 软重载。⚠️ `--reload` 会丢弃未固化的运行时规则。
@@ -66,6 +70,10 @@ zone 描述网络连接的信任级别：drop（丢弃不回复）/block（icmp 
 ### SELinux 安全上下文与 MAC
 
 SELinux 是 NSA 开发的 MAC 系统，内核每次系统调用查询策略。安全上下文为 `user:role:type` 三元组（如 `system_u:object_r:httpd_sys_content_t:s0`）。查上下文用 `-Z` 系列（`id -Z` / `ls -Z` / `ps -eZ`）。
+
+![[assets/linux-rocky/diagram-selinux-troubleshooting.svg]]
+
+*图：SELinux AVC 拒绝的排错决策流（audit.log → audit2why → 定向修复）*
 
 ### SELinux 模式与 Boolean
 

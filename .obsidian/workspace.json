@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "ed6c995c223208e2",
+        "id": "5ab9bea6aa8c1542",
         "type": "tabs",
         "children": [
           {
-            "id": "271c1e302ab2be98",
+            "id": "65e387bd4e8e6f67",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "k8s/k8s-cluster-troubleshooting.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "k8s-cluster-troubleshooting"
+              "title": "新标签页"
             }
           }
         ]
@@ -41,7 +37,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "文件列表"
@@ -195,15 +193,20 @@
       "bases:新建数据库": false
     }
   },
-  "active": "271c1e302ab2be98",
+  "active": "65e387bd4e8e6f67",
   "lastOpenFiles": [
-    "k8s/k8s-pod-deployment-service.md",
+    "linux-rocky/rocky-linux-ops-playbook.md",
+    "assets/linux-rocky/diagram-firewalld-config-flow.svg",
+    "assets/linux-rocky/diagram-selinux-troubleshooting.svg",
+    "assets/linux-rocky/diagram-rocky-ops-arch.svg",
+    "推荐报告_2026-08-06.md",
+    "方案.md",
     "k8s/k8s-cluster-troubleshooting.md",
+    "k8s/k8s-pod-deployment-service.md",
     "k8s/k8s-cluster-ops-combat.md",
     "hadoop/hadoop-ecosystem.md",
     "docker/dockerfile-best-practices.md",
     "docker/docker-advanced-compose-swarm-security.md",
-    "方案.md",
     "assets/k8s/diagram-node-drain-flow.svg",
     "assets/k8s/diagram-etcd-backup-restore-flow.svg",
     "assets/k8s/diagram-k8s-troubleshooting-arch.svg",
@@ -219,9 +222,6 @@
     "assets/docker/diagram-multi-stage-build.svg",
     "assets/docker/diagram-layer-caching.svg",
     "deployment.md",
-    "assets/k8s/diagram-pod-lifecycle.svg",
-    "assets/k8s/diagram-deployment-rollout.svg",
-    "assets/k8s/diagram-k8s-architecture.svg",
     "skill/SKILL.md",
     "skill/README.md",
     "skill/scripts/render-mermaid.py",

@@ -12,12 +12,12 @@ topic: 网络
 
 Kubernetes 集群网络解决四类问题：
 
-| # | 问题 | 解决方案 |
-|---|------|---------|
-| ① | 容器间通信（同一 Pod 内） | localhost，由容器运行时 + 共享网络命名空间解决 |
-| ② | Pod 间通信 | 集群扁平网络，由 CNI 插件实现（任意 Pod IP 全网可路由，**无 NAT**） |
-| ③ | Pod 到 Service | kube-proxy 虚拟 IP + DNAT 转发 |
-| ④ | 外部到 Service | NodePort / LoadBalancer / Ingress 入口 |
+| #   | 问题              | 解决方案                                         |
+| --- | --------------- | -------------------------------------------- |
+| ①   | 容器间通信（同一 Pod 内） | localhost，由容器运行时 + 共享网络命名空间解决                |
+| ②   | Pod 间通信         | 集群扁平网络，由 CNI 插件实现（任意 Pod IP 全网可路由，**无 NAT**） |
+| ③   | Pod 到 Service   | kube-proxy 虚拟 IP + DNAT 转发                   |
+| ④   | 外部到 Service     | NodePort / LoadBalancer / Ingress 入口         |
 
 Kubernetes 采用**三段独立、互不重叠**的 IP 地址空间：Pod IP（网络插件分配）、Service IP（kube-apiserver 分配）、Node IP（kubelet / cloud-controller-manager 分配）。集群按 IP 族分为 IPv4-only、IPv6-only、dual-stack 三类，所有组件必须对主 IP 族达成一致。网络模型由各节点上的容器运行时实现，主流运行时通过 **CNI（Container Network Interface）** 插件管理网络，当前规范版本 1.1.0。
 

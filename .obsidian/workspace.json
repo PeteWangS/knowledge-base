@@ -199,6 +199,9 @@
   },
   "active": "65e387bd4e8e6f67",
   "lastOpenFiles": [
+    "hadoop/hadoop-core-internals.md",
+    "assets/hadoop/diagram-mapreduce-shuffle-sort.svg",
+    "assets/hadoop/diagram-hdfs-yarn-mr-arch.svg",
     "docker/docker-buildkit-cache-supplychain-security.md",
     "assets/docker/diagram-supplychain-security-flow.svg",
     "assets/docker/diagram-buildkit-cache-arch.svg",
@@ -213,8 +216,6 @@
     "assets/docker/diagram-swarm-task-state.svg",
     "assets/docker/diagram-docker-deep-arch.svg",
     "linux-rocky/rocky-linux-ops-playbook.md",
-    "assets/linux-rocky/diagram-firewalld-config-flow.svg",
-    "assets/linux-rocky/diagram-selinux-troubleshooting.svg",
     "推荐报告_2026-08-06.md",
     "方案.md",
     "k8s/k8s-cluster-troubleshooting.md",
@@ -241,7 +242,6 @@
     "Kubernetes Pod 基础.md",
     "knowledge-base-guide.md",
     "2024-07 知识库初始化.md",
-    "database/postgresql-notes.md",
     "k8s/sedv42PCf",
     "assets/linux-rocky",
     "assets/network"

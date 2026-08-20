@@ -57,6 +57,10 @@ Queue Mapping Interface 支持按用户 / 组或应用名等默认放置规则�
 
 > 关键点：工作保全下容器不丢，AM 需重发未满足的资源请求（AMRMClient 自动处理）；containerId 格式增加 epoch 前缀（如 Container_e17_...），RM 每次重启 epoch 递增。
 
+![[assets/hadoop/diagram-work-preserving-recovery-seq.svg]]
+
+*图：RM 工作保全重启恢复时序（NM 不杀容器 → 容器状态上报 → AM 重发请求 → 应用断点续跑）*
+
 ### state-store 三种实现与 fencing
 
 | 实现 | 特点 | 支持 HA |
@@ -106,6 +110,10 @@ Queue Mapping Interface 支持按用户 / 组或应用名等默认放置规则�
 | `-blocksperchunk` | 大文件分块并行传输 |
 
 > 关键点：-update / -overwrite 与已存在目标目录配合时复制的是**源目录内容**而非源目录本身；最小工作单元是一个文件（一个文件只由一个 map 处理），map 数超过文件数无收益；-pr 只对非 EC 目录有效；-atomic 的 tmp 目录必须在目标集群。
+
+![[assets/hadoop/diagram-distcp-copy-flow.svg]]
+
+*图：DistCp 复制执行流程（Driver 解析参数 → 清单生成 → Map 任务并行分片复制 → 目标集群原子提交）*
 
 ### Hadoop Streaming 流式接口
 
